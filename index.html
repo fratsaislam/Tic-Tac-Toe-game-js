@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="h-screen flex flex-col items-center justify-center transition-all duration-300 bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-white">
+    <!-- Game Title -->
+    <h1 id="Message" class="text-3xl font-bold mb-4">It's Player 1's Turn</h1>
+
+    <!-- Tic-Tac-Toe Grid -->
+    <div class="grid grid-cols-3 gap-2 w-[90%] max-w-[600px] relative">
+        <div class="case h-[120px] sm:h-[150px] border border-gray-700 dark:border-gray-300 flex justify-center items-center text-6xl cursor-pointer hover:bg-gray-200 dark:hover:bg-gray-700 transition-all" id="1" onclick="getCase(this.id)"></div>
+        <div class="case h-[120px] sm:h-[150px] border border-gray-700 dark:border-gray-300 flex justify-center items-center text-6xl cursor-pointer hover:bg-gray-200 dark:hover:bg-gray-700 transition-all" id="2" onclick="getCase(this.id)"></div>
+        <div class="case h-[120px] sm:h-[150px] border border-gray-700 dark:border-gray-300 flex justify-center items-center text-6xl cursor-pointer hover:bg-gray-200 dark:hover:bg-gray-700 transition-all" id="3" onclick="getCase(this.id)"></div>
+        <div class="case h-[120px] sm:h-[150px] border border-gray-700 dark:border-gray-300 flex justify-center items-center text-6xl cursor-pointer hover:bg-gray-200 dark:hover:bg-gray-700 transition-all" id="4" onclick="getCase(this.id)"></div>
+        <div class="case h-[120px] sm:h-[150px] border border-gray-700 dark:border-gray-300 flex justify-center items-center text-6xl cursor-pointer hover:bg-gray-200 dark:hover:bg-gray-700 transition-all" id="5" onclick="getCase(this.id)"></div>
+        <div class="case h-[120px] sm:h-[150px] border border-gray-700 dark:border-gray-300 flex justify-center items-center text-6xl cursor-pointer hover:bg-gray-200 dark:hover:bg-gray-700 transition-all" id="6" onclick="getCase(this.id)"></div>
+        <div class="case h-[120px] sm:h-[150px] border border-gray-700 dark:border-gray-300 flex justify-center items-center text-6xl cursor-pointer hover:bg-gray-200 dark:hover:bg-gray-700 transition-all" id="7" onclick="getCase(this.id)"></div>
+        <div class="case h-[120px] sm:h-[150px] border border-gray-700 dark:border-gray-300 flex justify-center items-center text-6xl cursor-pointer hover:bg-gray-200 dark:hover:bg-gray-700 transition-all" id="8" onclick="getCase(this.id)"></div>
+        <div class="case h-[120px] sm:h-[150px] border border-gray-700 dark:border-gray-300 flex justify-center items-center text-6xl cursor-pointer hover:bg-gray-200 dark:hover:bg-gray-700 transition-all" id="9" onclick="getCase(this.id)"></div>
+        <button onclick="resetGame()" class="mt-5 bg-blue-500 text-white px-6 py-2 rounded-lg text-lg shadow-md hover:bg-blue-600 transition-all absolute bottom-[-80px] left-[50%] translate-x-[-50%]" id="button">Reset Game</button>
+    </div>
+
+    <!-- Reset Button -->
+    
+
+    <script src="app.js"></script>
+</body>
+</html>
